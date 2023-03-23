@@ -3,8 +3,28 @@
 
 @import "./preflight";
 
+:root{
+  --main-color:#ca8a04;
+  --text:#115e59;
+}
+
 body {
   padding: 0;
   margin: 0;
   letter-spacing: 0.05em;
+}
+
+.navbar a{
+  font-family: sans-serif;
+  font-weight: 300;
+  padding-left: 28px;
+  font-size: 14px;
+  color: var(--text);
+  float: center;
+  margin-left: 2px;
+}
+
+.navbar a:hover{
+  color:var(--main-color);
+  padding-bottom: .5rem;
 }

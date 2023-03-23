@@ -1,5 +1,5 @@
-import Example from "@/components/Example";
-import ExampleLayout from "@/components/ExampleLayout";
+import Example from "@/pages/components/Example";
+import ExampleLayout from "@/pages/components/ExampleLayout";
 import exampleService from "@/services/example.service";
 
 import { useQuery } from "@tanstack/react-query";
