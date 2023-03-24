@@ -8,10 +8,19 @@
   --text:#115e59;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  letter-spacing: 0.05em;
+.logo{
+  margin-left: 28px;
+}
+
+.logonav{
+  margin-top:-10px;
+}
+
+.navbar{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-top: 1px;
 }
 
 .navbar a{
