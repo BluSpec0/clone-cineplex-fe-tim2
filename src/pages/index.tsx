@@ -8,12 +8,13 @@ const Home = () => {
   const { data, isLoading } = useQuery(["data-hello"], exampleService.hello);
 
   return (
+    <>
     <ExampleLayout>
       <div>
         {isLoading && <>Loading...</>}
         {!isLoading && <Example data={data?.rows} />}
       </div>
-    </ExampleLayout>
+    </ExampleLayout></>
   );
 };
 

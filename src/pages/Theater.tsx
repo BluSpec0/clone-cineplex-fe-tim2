@@ -1,88 +1,68 @@
+import React from 'react'
 import Link from "next/link";
 import { Image } from "@mantine/core";
 
-const ExampleLayout = ({ children }: any) => {
+export default function Theater() {
   return (
-    <>
-    <title>CINEMA 21 - We Are The Largest Cinema Chain in Indonesia</title> 
-      <div className=" object-top  w-full bg-white h-[110px] p-6 border-b">
-        <Image
-          src="https://i0.wp.com/airinsight.com/wp-content/uploads/2022/06/51894886006_20f38ed67d_o.jpg?fit=2560%2C1439&ssl=1"
-          alt="iklan"
-          width={728}
-          height={90}
-          className="iklan"
-        ></Image>
-      </div>
-
-      <div className="z-40 w-full bg-teal-800 h-[86px] p-6">
-        <a href="#" >
+    <><div className=" object-top  w-full bg-white h-[110px] p-6 border-b">
           <Image
-            className="ml-28"
-            src="image/logo.png"
-            alt="logo"
-            width={250}
+              src="https://i0.wp.com/airinsight.com/wp-content/uploads/2022/06/51894886006_20f38ed67d_o.jpg?fit=2560%2C1439&ssl=1"
+              alt="iklan"
+              width={728}
+              height={90}
+              className="iklan"
           ></Image>
-        </a>
-      </div>
-
-      <div className="searchbar">
-        <input
-          type="text"
-          placeholder="Search teathers,movies..."
-          className="z-50 bg-zinc-200 rounded-full border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent px-4 py-2 w-96 italic text-sm font-light"
-        />
-      </div>
-
-      <div className="z-40 w-full bg-gray-100 h-[65px] p-5 navbar font-semibold ">
-        <ul className="navlogo font-normal">
-          <a href="#NowPlaying">Now Playing</a>
-          <a href="/Upcoming">Upcoming</a>
-          <a href="/Theater">Theaters</a>
-          <a href="#">Promotions</a>
-          <a href="#">Info 21</a>
-          <p className="fon"
-          style={{margin: "-3.4rem 0rem 2rem 50rem"}}>|</p>
-          <a href="https://21cineplex.com/imax">
-            <Image 
-            src="https://21cineplex.com//theme/v5/assets/img/imax-menu.png" 
-            height={18} 
-            width={80} 
-            alt=""
-            style={{margin: "-5.8rem 0rem 2rem 54rem" }}></Image>
-          </a>
-          <a href="https://21cineplex.com/dolby-atmos">
-            <Image 
-            src="https://21cineplex.com//theme/v5/assets/img/dolby-menu.png" 
-            alt=""
-            height={18} 
-            width={120}
-            style={{margin: "-4.7rem 0rem 2rem 63rem" }}></Image>
-          </a>
-          <a href="/login">
-            <Image 
-            src="https://21cineplex.com//theme/v5/assets/img/mtix-menu.png" 
-            alt=""
-            height={18} 
-            width={82}
-            style={{margin: "-4.7rem 0rem 2rem 74.5rem" }}></Image>
-          </a>
-        </ul>
-      </div>
-
-      <div className="z-50 object-top  w-full bg-white h-[110px] pl-6 pt-6 pb-5">
-        <Image
-          src="https://media.21cineplex.com/webcontent/gallery/pictures/167940075011615_925x527.jpg"
-          alt="iklan"
-          width={925}
-          height={527}
-          style={{margin: "5px 0rem 10rem 7.3rem" }}
-        ></Image>
-      </div>
-      
-      <div className="w-40 bg-teal-800 text-gray-100 text-center pb-1.5 pt-0.5 font-bold tracking-widest"
-      style={{margin: "550px 0rem -2.1rem 8.7rem" }}
-      id="NowPlaying">
+      </div><div className="z-40 w-full bg-teal-800 h-[86px] p-6">
+              <a href="#">
+                  <Image
+                      className="ml-28"
+                      src="image/logo.png"
+                      alt="logo"
+                      width={250}
+                  ></Image>
+              </a>
+          </div><div className="searchbar">
+              <input
+                  type="text"
+                  placeholder="Search teathers,movies..."
+                  className="z-50 bg-zinc-200 rounded-full border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent px-4 py-2 w-96 italic text-sm font-light" />
+          </div><div className="z-40 w-full bg-gray-100 h-[65px] p-5 navbar font-semibold ">
+              <ul className="navlogo font-normal">
+                  <a href="/#">Now Playing</a>
+                  <a href="/Upcoming">Upcoming</a>
+                  <a href="/Theater">Theaters</a>
+                  <a href="#">Promotions</a>
+                  <a href="#">Info 21</a>
+                  <p className="fon"
+                      style={{ margin: "-3.4rem 0rem 2rem 50rem" }}>|</p>
+                  <a href="#">
+                      <Image
+                          src="https://21cineplex.com//theme/v5/assets/img/imax-menu.png"
+                          height={18}
+                          width={80}
+                          alt=""
+                          style={{ margin: "-5.8rem 0rem 2rem 54rem" }}></Image>
+                  </a>
+                  <a href="#">
+                      <Image
+                          src="https://21cineplex.com//theme/v5/assets/img/dolby-menu.png"
+                          alt=""
+                          height={18}
+                          width={120}
+                          style={{ margin: "-4.7rem 0rem 2rem 63rem" }}></Image>
+                  </a>
+                  <a href="/login">
+                      <Image
+                          src="https://21cineplex.com//theme/v5/assets/img/mtix-menu.png"
+                          alt=""
+                          height={18}
+                          width={82}
+                          style={{ margin: "-4.7rem 0rem 2rem 74.5rem" }}></Image>
+                  </a>
+              </ul>
+          </div>
+          <div className="w-40 bg-teal-800 text-gray-100 text-center pb-1.5 pt-0.5 font-bold tracking-widest"
+      style={{margin: "3rem 0rem -2.1rem 8.7rem" }}>
         <p>Now Playing</p>
       </div>
 
@@ -149,7 +129,8 @@ const ExampleLayout = ({ children }: any) => {
           </select>
         </div>
       </div>
-      <div className="pt-[88px] pb-4 px-2 md:px-5">{children}</div>
+
+          <div className="pt-[157px] pb-4 px-2 md:px-5"></div>
       <div className="w-full bg-teal-800 h-[174px] pb-[48px] md:pb-0 px-2 md:px-5 p-5 navbar1 text-white font-thin">
         <ul className="navlogo font-normal ">
           <a href="/Upcoming">Profile</a>
@@ -201,9 +182,7 @@ const ExampleLayout = ({ children }: any) => {
 Any commercial usage of the materials and contents is forbidden without prior permission from PT Nusantara Sejahtera Raya. There is no other institutions/agencies outside
 PT Nusantara Sejahtera Raya allowed to use www.21Cineplex.com (21Cineplex website) without prior permission from PT Nusantara Sejahtera Raya
         </div>
-      </div>
+      </div>        
     </>
-  );
-};
-
-export default ExampleLayout;
+  )
+}

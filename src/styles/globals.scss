@@ -48,6 +48,39 @@
   letter-spacing: 1px;
 }
 
+.navbar1{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-top: 24px;
+}
+
+.navbar1 a{
+  font-family: 'Montserrat', sans-serif;
+  padding: 39px 28px;
+  font-size: 14px;
+  color: #FFFFFF;
+  float: center;
+  margin-left: 2px;
+  letter-spacing: 1px;
+}
+
+.navbar1 a:hover{
+  color:var(--main-color);
+  letter-spacing: 1px;
+}
+
+.footer{
+  font-family: 'Myriad Pro Regular';
+    font-size: 11px;
+    margin-bottom: 0;
+    color: #7DBCB8;
+    display: block;
+    margin-left: 120px;
+    margin-right: 445px;
+    margin-top: 20px;
+}
+
 .kotak{
   margin: 50px 70px;
   display: inline-block;
@@ -60,3 +93,4 @@
   color:#bcbcbc;
   font-size: 45px;
 }
+
