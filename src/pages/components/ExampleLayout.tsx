@@ -4,8 +4,8 @@ import { Image } from "@mantine/core";
 const ExampleLayout = ({ children }: any) => {
   return (
     <>
-    <title>CINEMA 21 - We Are The Largest Cinema Chain in Indonesia</title> 
-      <div className=" object-top  w-full bg-white h-[110px] p-6 border-b">
+      <title>CINEMA 21 - We Are The Largest Cinema Chain in Indonesia</title>
+      <div className=" object-top  w-full bg-white h-[110px] p-6 border-b md:block hidden">
         <Image
           src="https://i0.wp.com/airinsight.com/wp-content/uploads/2022/06/51894886006_20f38ed67d_o.jpg?fit=2560%2C1439&ssl=1"
           alt="iklan"
@@ -15,18 +15,34 @@ const ExampleLayout = ({ children }: any) => {
         ></Image>
       </div>
 
-      <div className="z-40 w-full bg-teal-800 h-[86px] p-6">
-        <a href="#" >
+      <div className="bg-teal-800 p-6 md:h-[86px] md:w-full md:block hidden">
+        <a href="#">
           <Image
-            className="ml-28"
+            className="ml-28 w-[250px] items-center md:block"
             src="image/logo.png"
             alt="logo"
-            width={250}
           ></Image>
         </a>
       </div>
+      
+      <div className="z-50 fixed block">
+        <div className="w-[1000px] bg-teal-800 h-[115px] p-6 md:h-[86px] md:hidden">
+          <a href="#">
+            <Image
+              className="ml-[140px] mt-[-12px] w-[540px] items-center md:hidden"
+              src="image/logo2.png"
+              alt="logo2"
+            ></Image>
+          </a>
+        </div>
+        <div className="md:hidden text-[39px] bg-white h-[115px] w-[1000px] z-50 text-teal-800">
+          <p className="ml-[185px] pt-[25px]">
+            Theaters in <strong> JAKARTA </strong>
+          </p>
+        </div>
+      </div>
 
-      <div className="searchbar">
+      <div className="searchbar hidden md:block">
         <input
           type="text"
           placeholder="Search teathers,movies..."
@@ -34,60 +50,72 @@ const ExampleLayout = ({ children }: any) => {
         />
       </div>
 
-      <div className="z-40 w-full bg-gray-100 h-[65px] p-5 navbar font-semibold ">
-        <ul className="navlogo font-normal">
+      <div className="z-40 w-full bg-gray-100 h-[65px] p-5 navbar font-semibold hidden md:block text">
+        <ul className="navlogo font-normal ">
           <a href="#NowPlaying">Now Playing</a>
           <a href="/Upcoming">Upcoming</a>
           <a href="/Theater">Theaters</a>
           <a href="#">Promotions</a>
           <a href="#">Info 21</a>
-          <p className="fon"
-          style={{margin: "-3.4rem 0rem 2rem 50rem"}}>|</p>
+          <p className="fon" style={{ margin: "-3.4rem 0rem 2rem 50rem" }}>
+            |
+          </p>
           <a href="https://21cineplex.com/imax">
-            <Image 
-            src="https://21cineplex.com//theme/v5/assets/img/imax-menu.png" 
-            height={18} 
-            width={80} 
-            alt=""
-            style={{margin: "-5.8rem 0rem 2rem 54rem" }}></Image>
+            <Image
+              src="https://21cineplex.com//theme/v5/assets/img/imax-menu.png"
+              height={18}
+              width={80}
+              alt=""
+              style={{ margin: "-5.8rem 0rem 2rem 54rem" }}
+            ></Image>
           </a>
           <a href="https://21cineplex.com/dolby-atmos">
-            <Image 
-            src="https://21cineplex.com//theme/v5/assets/img/dolby-menu.png" 
-            alt=""
-            height={18} 
-            width={120}
-            style={{margin: "-4.7rem 0rem 2rem 63rem" }}></Image>
+            <Image
+              src="https://21cineplex.com//theme/v5/assets/img/dolby-menu.png"
+              alt=""
+              height={18}
+              width={120}
+              style={{ margin: "-4.7rem 0rem 2rem 63rem" }}
+            ></Image>
           </a>
           <a href="/login">
-            <Image 
-            src="https://21cineplex.com//theme/v5/assets/img/mtix-menu.png" 
-            alt=""
-            height={18} 
-            width={82}
-            style={{margin: "-4.7rem 0rem 2rem 74.5rem" }}></Image>
+            <Image
+              src="https://21cineplex.com//theme/v5/assets/img/mtix-menu.png"
+              alt=""
+              height={18}
+              width={82}
+              style={{ margin: "-4.7rem 0rem 2rem 74.5rem" }}
+            ></Image>
           </a>
         </ul>
       </div>
 
-      <div className="z-50 object-top  w-full bg-white h-[110px] pl-6 pt-6 pb-5">
+      <div className="z-50 object-top  w-full md:bg-white md:h-[110px] pl-6 pt-6 pb-5">
         <Image
           src="https://media.21cineplex.com/webcontent/gallery/pictures/167940075011615_925x527.jpg"
           alt="iklan"
-          width={925}
-          height={527}
-          style={{margin: "5px 0rem 10rem 7.3rem" }}
+          className="w-[925px] h-[527px] md:block hidden"
+          style={{ margin: "5px 0rem 10rem 7.3rem" }}
+        ></Image>
+        <Image
+          src="https://web3.21cineplex.com/mobile-banner/MakinDekatApps.jpg"
+          alt="iklan2"
+          className="w-[725px] md:hidden mt-[16.5rem]"
         ></Image>
       </div>
-      
-      <div className="w-40 bg-teal-800 text-gray-100 text-center pb-1.5 pt-0.5 font-bold tracking-widest"
-      style={{margin: "550px 0rem -2.1rem 8.7rem" }}
-      id="NowPlaying">
+
+      <div
+        className="w-40 bg-teal-800 text-gray-100 text-center pb-1.5 pt-0.5 font-bold tracking-widest md:block hidden"
+        style={{ margin: "550px 0rem -2.1rem 8.7rem" }}
+        id="NowPlaying"
+      >
         <p>Now Playing</p>
       </div>
 
-      <div className=" bg-gray-100 text-teal-800 w-44 p-1"
-        style={{margin: "-21px 0rem 0rem 18.7rem" }}>
+      <div
+        className=" bg-gray-100 text-teal-800 w-44 p-1 md:block hidden"
+        style={{ margin: "-21px 0rem 0rem 18.7rem" }}
+      >
         <div className="select-twenty">
           <select className="custom-select bg-gray-100" id="city-change">
             <option value="77">AMBON</option>
@@ -149,57 +177,59 @@ const ExampleLayout = ({ children }: any) => {
           </select>
         </div>
       </div>
-      <div className="pt-[88px] pb-4 px-2 md:px-5">{children}</div>
-      <div className="w-full bg-teal-800 h-[174px] pb-[48px] md:pb-0 px-2 md:px-5 p-5 navbar1 text-white font-thin">
-        <ul className="navlogo font-normal ">
-          <a href="/Upcoming">Profile</a>
-          |
-          <a href="#">Terms of Use</a>
-          |
+      <div className="w-full pt-[88px] pb-4 px-2 md:px-5">{children}</div>
+      <div className="md:w-full bg-teal-800 h-[174px] pb-[48px] md:pb-0 px-2 md:px-5 p-5 navbar1 text-white font-thin">
+        <ul className="navlogo font-normal">
+          <a href="/Upcoming">Profile</a>|<a href="#">Terms of Use</a>|
           <a href="#">Advertising</a>
         </ul>
         <div>
-            <a href="#">
+          <a href="#">
             <Image
               className=""
               src="image/instagram.png"
               alt="iklan"
               width={16}
-              style={{margin: "-32px 0rem 0rem 75rem" }}
+              style={{ margin: "-32px 0rem 0rem 75rem" }}
             ></Image>
-            </a>
-            <a href="#">
+          </a>
+          <a href="#">
             <Image
               className=""
               src="image/facebook.png"
               alt="iklan"
               width={16}
-              style={{margin: "-41px 0rem 0rem 78rem" }}
+              style={{ margin: "-41px 0rem 0rem 78rem" }}
             ></Image>
-            </a>
-            <a href="#">
+          </a>
+          <a href="#">
             <Image
               className=""
               src="image/twitter.png"
               alt="iklan"
               width={16}
-              style={{margin: "-40px 0rem 0rem 81rem" }}
+              style={{ margin: "-40px 0rem 0rem 81rem" }}
             ></Image>
-            </a>
-            <a href="#">
+          </a>
+          <a href="#">
             <Image
               className=""
               src="image/youtube.png"
               alt="iklan"
               width={16}
-              style={{margin: "-41px 0rem 0rem 84rem" }}
+              style={{ margin: "-41px 0rem 0rem 84rem" }}
             ></Image>
-            </a>
+          </a>
         </div>
         <div className="footer">
-        © 1999-2012 21Cineplex.com. All materials and contents (texts, graphics, and every attributes) of 21Cineplex or 21Cineplex.com website are copyrights and trademarks of PT Nusantara Sejahtera Raya.
-Any commercial usage of the materials and contents is forbidden without prior permission from PT Nusantara Sejahtera Raya. There is no other institutions/agencies outside
-PT Nusantara Sejahtera Raya allowed to use www.21Cineplex.com (21Cineplex website) without prior permission from PT Nusantara Sejahtera Raya
+          © 1999-2012 21Cineplex.com. All materials and contents (texts,
+          graphics, and every attributes) of 21Cineplex or 21Cineplex.com
+          website are copyrights and trademarks of PT Nusantara Sejahtera Raya.
+          Any commercial usage of the materials and contents is forbidden
+          without prior permission from PT Nusantara Sejahtera Raya. There is no
+          other institutions/agencies outside PT Nusantara Sejahtera Raya
+          allowed to use www.21Cineplex.com (21Cineplex website) without prior
+          permission from PT Nusantara Sejahtera Raya
         </div>
       </div>
     </>

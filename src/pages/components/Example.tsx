@@ -2,16 +2,23 @@ import { Badge, Card, Group, Image, Text } from "@mantine/core";
 
 const Example = ({ data }: { data: any[] }) => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-2 p-10 mx-20">
+    <div className=" grid grid-cols-2 md:grid-cols-4 gap-[120px]">
       {data?.map((item, index) => (
         <>
         <a href={item.href}>
         <Card key={index}>
           <Card.Section>
-            <Image src={item.src} height={426} width={290} alt="Movie" />
+            <Image src={item.src} alt="Movie" 
+            className="flex md:h-[426px] md:w-[290px]"/>
           </Card.Section>
 
-          <Text weight={500} size={19}
+          <Group position="apart" mt="md" mb="xs">
+            <Text weight={500}>{item.name}</Text>
+            <Image src={item.umur} alt="umur" className="h-[22px] w-[42px] radius-[3px]">
+            </Image>
+          </Group>
+
+          {/* <Text weight={500} size={19}
           style={{margin: "0.8rem 0rem 0rem 0rem"}}>
             {item.name}
           </Text>
@@ -24,7 +31,7 @@ const Example = ({ data }: { data: any[] }) => {
             alt="Umur"
             radius={3}
             place-items-center
-          ></Image>
+          ></Image> */}
         </Card>
         </a>
         </>

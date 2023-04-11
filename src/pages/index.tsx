@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
     <ExampleLayout>
-      <div>
+      <div className="w-full">
         {isLoading && <>Loading...</>}
         {!isLoading && <Example data={data?.rows} />}
       </div>

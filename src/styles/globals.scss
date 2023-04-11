@@ -94,3 +94,9 @@
   font-size: 45px;
 }
 
+@media (max-width: 768px){
+  .navbar2{
+    position: -webkit-sticky;
+    position: sticky;
+  } 
+}
